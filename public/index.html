@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Fruit Inventory</h1>
+
+    <form action="/add" method="POST">
+      <fieldset>
+        <h3>Add New Fruit</h3>
+        <label for="fruit_name">Fruit Name </label>
+        <input type="text" name="fruit_name" id="fruit_name" /><br />
+        <label for="inventory">Inventory</label>
+        <input type="text" name="inventory" id=inventory"" /> <br />
+        <label for="unit_id">Unit ID</label>
+        <select name="unit_id" id="unit_id">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </fieldset>
+      <input type="submit" value="Add Fruit" />
+    </form>
+    <!-- seach -->
+    <form action="/search" method="POST">
+      <fieldset>
+        <h3>Search:</h3>
+        <label for="fruit_id">Input Fruit ID:</label>
+        <input type="number" name="fruit_id" id="fruit_id" />
+        <input type="submit" value="Search" />
+      </fieldset>
+    </form>
+    <!-- update -->
+    <form action="/update" method="POST">
+      <fieldset>
+        <h3>Update:</h3>
+        <label for="fruit_id">Input Fruit ID:</label>
+        <input type="number" name="fruit_id" id="fruit_id" />
+
+        <label for="fruit_name">Input Fruit Name:</label>
+        <input type="text" name="fruit_name" id="fruit_id" />
+        <label for="inventory">Input Inventory:</label>
+        <input type="number" name="inventory" id="inventory" />
+
+        <label for="unit_id">Input Unit ID:</label>
+        <input type="number" name="unit_id" id="unit_id" />
+
+        <input type="submit" value="Update" />
+      </fieldset>
+    </form>
+
+    <!-- Delete -->
+    <form action="/delete" method="POST">
+      <fieldset>
+        <h3>Delete:</h3>
+        <label for="fruit_id">Input Fruit ID:</label>
+        <input type="number" name="fruit_id" id="fruit_id" />
+        <input type="submit" value="Search" />
+      </fieldset>
+    </form>
+  </body>
+</html>
